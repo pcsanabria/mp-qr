@@ -326,11 +326,26 @@ $(document).ready(function() {
 		// Modifica el storeJSON con la estructura necesaria para crear una Store correctamente.
 
 		var storeJSON = {}
+		var storeLocationJson={}
+
+		storeJSON["name"]=storeName;
+
+		storeLocationJson["street_name"]=storeName;
+		storeLocationJson["street_number"]=streetNumber;
+		storeLocationJson["city_name"]=city;
+		storeLocationJson["state_name"]=state;
+		storeLocationJson["latitude"]=latitude;
+		storeLocationJson["longitude"]=longitude;
+		storeLocationJson["reference"]=addressReference;
+		
+		storeJSON["location"]=storeLocationJson;
+		storeJSON["external_id"]=externalStoreID;
 
 		console.log(storeJSON);
 		$.post("api/store/create/",{json:JSON.stringify(storeJSON)},function(results){
 			console.log("Crea store:");
 			console.log(results);
+			$("#store_id").val(results.id);
 			$("#responseStore").text(JSON.stringify(results));
 		});
 	});
@@ -356,9 +371,10 @@ $(document).ready(function() {
 
 		var posJSON ={"name":posName,
 					"external_store_id":externalStoreID,
-					"fixed_amount":false,
-					"category_id":category,
-					"external_id":externalPOSID};
+					"fixed_amount":true,
+					//"category_id":category,
+					"external_id":externalPOSID
+					};
 
 
 

@@ -1,0 +1,11 @@
+create store
+
+{"id":"32218978","name":"Sucursal 28167852","date_creation":"2020-06-26T01:09:29.826Z","location":{"address_line":"Sucursal 28167852 2929, Palermo, Capital Federal, Argentina","reference":"Piso 1","latitude":-34.5756022,"longitude":-58.4249225},"external_id":"suc2816785201"}
+
+------------  002  -------------------
+
+create store
+{"id":"32219933","name":"Sucursal 28167852","date_creation":"2020-06-26T01:52:52.999Z","location":{"address_line":"Sucursal 28167852 2929, Palermo, Capital Federal, Argentina","reference":"Piso 1","latitude":-34.5756022,"longitude":-58.4249225},"external_id":"suc28167852002"}
+
+create pos
+{"id":10171653,"qr":{"image":"https://www.mercadopago.com/instore/merchant/qr/10171653/1029187013ad42f0b103550279f1dcb97538042fcf9a433c9b86fdd1615654aa.png","template_document":"https://www.mercadopago.com/instore/merchant/qr/10171653/template_1029187013ad42f0b103550279f1dcb97538042fcf9a433c9b86fdd1615654aa.pdf","template_image":"https://www.mercadopago.com/instore/merchant/qr/10171653/template_1029187013ad42f0b103550279f1dcb97538042fcf9a433c9b86fdd1615654aa.png"},"status":"active","date_created":"2020-06-25T21:53:01.000-04:00","date_last_updated":"2020-06-25T21:53:01.000-04:00","uuid":"1029187013ad42f0b103550279f1dcb97538042fcf9a433c9b86fdd1615654aa","user_id":586728271,"name":"Sucursal 28167852","fixed_amount":true,"store_id":"32219933","external_store_id":"suc28167852002","external_id":"pos28167852002"}
