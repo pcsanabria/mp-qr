@@ -1,6 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
 
-ini_set('display_errors', 0);
+
 header('Content-type: application/json');
 include_once '../global/functions.php';
 global $access_token,$collector_id,$notificationJSON;
@@ -13,6 +15,10 @@ global $access_token,$collector_id,$notificationJSON;
 // Como no trabajaremos con Base de Datos, ésta es una forma creativa de recibir las notificaciones y guardar la última en un archivo de texto para poder hacer las consultas.
 
 $rootPath = $_SERVER['DOCUMENT_ROOT'];
+
+$fp = fopen('notifications2.txt', 'w');
+fwrite($fp, file_get_contents('php://input'));
+fclose($fp);
 
 
 // Recibe notificación:
