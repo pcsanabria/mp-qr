@@ -17,6 +17,6 @@ $url = "https://api.mercadopago.com/merchant_orders";
  // Pista... revísalo bien...
  // Sustituye el método por su correspondiente: get, put, post, delete
 
-curl_call("GET","$url?external_reference=$external_reference&access_token=$access_token");
+curl_call("GET","$url?external_reference=$external_reference&access_token=$access_token","");
 
 ?>
